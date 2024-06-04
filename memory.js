@@ -23,7 +23,7 @@ function activate(e) {
         if (++currentMove == 2) {
 
             currentAttempts++;
-            document.querySelector('#stats').innerHTML = currentAttempts + 'intentos';
+            document.querySelector('#stats').innerHTML = 'Clicks:' + currentAttempts;
 
             if (selectedCards[0].querySelectorAll('.face')[0].innerHTML == selectedCards[1].querySelectorAll('.face')[0].textContent){
             selectedCards.forEach(card => card.classList.add('matched'));
